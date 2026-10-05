@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wagmi — Privacy Policy</title>
+<style>
+:root {
+  --bg: #0D0D12;
+  --surface: #13141A;
+  --border: rgba(255,255,255,0.07);
+  --text: #FFFFFF;
+  --muted: #6B7280;
+  --accent: #00C2FF;
+  --radius: 12px;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  box-sizing: border-box;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #F2F2F7; --surface: #FFFFFF; --border: rgba(0,0,0,0.07); --text: #0D0D12; --muted: #6B7280; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.7; }
+.wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+header { margin-bottom: 48px; }
+.logo { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: var(--text); }
+.logo span { color: var(--accent); }
+.updated { font-size: 13px; color: var(--muted); margin-top: 6px; }
+h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+h2 { font-size: 18px; font-weight: 600; margin: 36px 0 10px; color: var(--text); }
+p { color: var(--text); opacity: 0.85; margin-bottom: 14px; }
+ul { padding-left: 20px; margin-bottom: 14px; }
+li { color: var(--text); opacity: 0.85; margin-bottom: 6px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin: 32px 0; }
+.card p { margin: 0; opacity: 1; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">W<span>agmi</span></div>
+    <div class="updated">Last updated: October 2026</div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p>Wagmi is built with privacy as a default. This policy explains what data the app collects, how it is used, and what stays on your device.</p>
+
+  <div class="card">
+    <p>⚡ Short version: Wagmi does not collect, store, or share any personal data. Your coin list lives only on your device.</p>
+  </div>
+
+  <h2>Data we collect</h2>
+  <p>Wagmi collects no personal data. The app does not require an account or login of any kind.</p>
+
+  <h2>Data stored on your device</h2>
+  <p>The only data stored locally on your device is your coin watchlist — the coins you add or remove. This data never leaves your device and is stored using iOS's standard UserDefaults mechanism.</p>
+
+  <h2>Third-party services</h2>
+  <p>Wagmi connects to the following external services to fetch market data:</p>
+  <ul>
+    <li><strong>Binance WebSocket</strong> — real-time price streaming. Your IP address is used to establish the connection, as with any internet request. Binance's privacy policy applies.</li>
+    <li><strong>CoinGecko API</strong> — coin metadata and search. Requests are made directly from your device. CoinGecko's privacy policy applies.</li>
+    <li><strong>TradingView</strong> — price charts rendered inside the app via a web view. TradingView's privacy policy applies.</li>
+  </ul>
+  <p>We have no control over the data these services may collect independently. We recommend reviewing their respective privacy policies.</p>
+
+  <h2>Analytics and tracking</h2>
+  <p>Wagmi contains no analytics, tracking SDKs, advertising identifiers, or crash reporting tools. We do not know how you use the app.</p>
+
+  <h2>Children</h2>
+  <p>Wagmi is rated 4+ and does not knowingly collect data from anyone, including children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, the updated date at the top of this page will reflect that. Continued use of the app constitutes acceptance of any changes.</p>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p>Questions about this privacy policy? <a href="mailto:support@wagmiapp.com">support@wagmiapp.com</a></p>
+</div>
+</body>
+</html>
