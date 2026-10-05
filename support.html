@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wagmi — Support</title>
+<style>
+:root {
+  --bg: #0D0D12;
+  --surface: #13141A;
+  --surface2: #1A1B23;
+  --border: rgba(255,255,255,0.07);
+  --text: #FFFFFF;
+  --muted: #6B7280;
+  --accent: #00C2FF;
+  --green: #00E676;
+  --red: #FF5252;
+  --radius: 12px;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  box-sizing: border-box;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #F2F2F7; --surface: #FFFFFF; --surface2: #F2F2F7; --border: rgba(0,0,0,0.07); --text: #0D0D12; --muted: #6B7280; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.7; }
+.wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+header { margin-bottom: 48px; }
+.logo { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+.logo span { color: var(--accent); }
+.tagline { font-size: 13px; color: var(--muted); margin-top: 6px; }
+h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+h2 { font-size: 18px; font-weight: 600; margin: 40px 0 16px; }
+p { opacity: 0.85; margin-bottom: 14px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+.faq { display: flex; flex-direction: column; gap: 2px; }
+.faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.faq-item summary { padding: 16px 20px; font-weight: 600; font-size: 15px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; color: var(--accent); font-size: 20px; font-weight: 300; transition: transform 0.2s; }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-body { padding: 0 20px 16px; opacity: 0.85; font-size: 15px; line-height: 1.65; }
+
+.contact-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-top: 32px; }
+.contact-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+.contact-card p { margin: 0; opacity: 0.85; font-size: 15px; }
+.contact-card a { font-weight: 500; }
+
+.status { display: inline-flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 99px; padding: 6px 14px; font-size: 13px; margin-bottom: 32px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">W<span>agmi</span></div>
+    <div class="tagline">We're all gonna make it</div>
+  </header>
+
+  <div class="status">
+    <span class="dot"></span>
+    All systems operational
+  </div>
+
+  <h1>Support</h1>
+  <p>Got a question or ran into an issue? We've got you covered.</p>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq">
+    <details class="faq-item">
+      <summary>Prices are showing — instead of a number</summary>
+      <div class="faq-body">This means the app hasn't received price data yet. It usually resolves within a few seconds after launch. If it persists, check your internet connection and relaunch the app. Some coins may take up to 10 seconds if they are not listed on Binance and need to be fetched from a backup source.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>The chart isn't loading</summary>
+      <div class="faq-body">Charts are powered by TradingView and require an internet connection. Make sure you're online and try tapping on the coin again to reopen the panel. If TradingView is experiencing an outage, charts may be temporarily unavailable.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I add a coin?</summary>
+      <div class="faq-body">Tap the + button in the top right corner of the main screen. Search for any coin by name or ticker symbol and tap it to add it to your list.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I remove a coin?</summary>
+      <div class="faq-body">Swipe left on any coin row in the list and tap Delete.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I reorder my coins?</summary>
+      <div class="faq-body">Press and hold anywhere on the list to enter reorder mode. Drag the coins into the order you want using the handle on the right side of each row. Press and hold again to exit reorder mode.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What does the badge number mean when I tap it?</summary>
+      <div class="faq-body">Tapping the percentage badge switches between showing the 24-hour percentage change and the 24-hour price change in USD. Tap again to switch back.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Will I lose my coins if I update the app?</summary>
+      <div class="faq-body">No. Your coin list is saved locally on your device and persists through updates. It is only lost if you delete the app entirely.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I switch between light and dark mode?</summary>
+      <div class="faq-body">Tap the gear icon in the top left corner of the main screen. You can toggle between light and dark mode in Settings.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Where does the price data come from?</summary>
+      <div class="faq-body">Prices are streamed in real time from Binance via WebSocket, which means updates happen in under a second. For coins not listed on Binance, prices are fetched from CoinGecko and refreshed every 10 seconds.</div>
+    </details>
+  </div>
+
+  <hr>
+
+  <h2>Still need help?</h2>
+  <p>If you didn't find the answer above, reach out and we'll get back to you as soon as possible.</p>
+
+  <div class="contact-card">
+    <h3>Email support</h3>
+    <p>Send us a message at <a href="mailto:support@wagmiapp.com">support@wagmiapp.com</a> and we'll respond within 1–2 business days.</p>
+  </div>
+
+  <hr>
+
+  <p style="font-size: 13px; opacity: 0.4;">Wagmi · <a href="privacy.html">Privacy Policy</a></p>
+</div>
+</body>
+</html>
